@@ -12,6 +12,13 @@ Version 2.0 has been tested on Ubuntu 9.04, Mac OS-X 10.5, Windows XP, FreeBSD 8
 On Ubuntu, you may need to install "libusb-dev" to compile.
 
   `sudo apt-get install libusb-dev`
+  
+On Fedora, `libusb` need to be removed and `libusb-compat` need to be installed.
+
+  `sudo dnf remove libsub1-devel`
+  `sudo dnf remove libusb-compat-devel`
+  
+And recompile the source with `make` command.
 
 Other Linux systems may [require other package installation](https://forum.pjrc.com/threads/40965-Linux-64bit-Arduino-1-6-13-Issues-starting-Teensy-Loader-and-libusb-0-1-so-4-error?p=127873&viewfull=1#post127873) to compile.
 
